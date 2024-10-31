@@ -20,3 +20,6 @@ Route::get('/', function () {
 Route::get('/teste', function () {
     return view('teste');
     });
+
+Route::get('/produto', [ProdutoController::class, 'index']);
+Route::get('/produto/{id}', [ProdutoController::class, 'show']);
