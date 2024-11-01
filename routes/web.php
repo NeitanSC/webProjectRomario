@@ -22,4 +22,6 @@ Route::get('/teste', function () {
     });
 
 Route::get('/produto', [ProdutoController::class, 'index']);
-Route::get('/produto/{id}', [ProdutoController::class, 'show']);
+
+Route::get('/fornecedores/{id}', [App\Http\Controllers\FornecedorController::class, 'show']);
+Route::get('/fornecedores', [App\Http\Controllers\FornecedorController::class, 'index']);
